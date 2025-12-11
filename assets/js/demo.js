@@ -1,6 +1,6 @@
-// Get elements
-const resetBtn = document.getElementById("resetBtn");
+
 const submitBtn = document.getElementById("submitBtn");
+const resetBtn = document.getElementById("resetBtn");
 const overlay = document.getElementById("overlay");
 
 const resetPopup = document.getElementById("resetPopup");
