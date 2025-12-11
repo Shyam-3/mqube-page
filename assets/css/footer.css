@@ -1,0 +1,45 @@
+/* ensure footer stays at the bottom when page is short */
+.footer-section {
+    flex-shrink: 0;
+    /* don't let footer shrink */
+    /* background: #3068B1; */
+    /* your footer styling (keep existing rules) */
+    background: #3068B1 0% 0% no-repeat padding-box;
+    color: #fff;
+    padding: 40px 0;
+    opacity: 1;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #dfe8ff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffdd76;
+}
+
+.c {
+    border: 1px solid #C8E0FF;
+    opacity: 1;
+    top: 1932px;
+    left: 1068px;
+    width: 232px;
+    height: 111px;
+
+    background: transparent url('../images/header footer/map-icon.png') 0% 0% no-repeat padding-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}

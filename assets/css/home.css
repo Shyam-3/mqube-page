@@ -1,0 +1,248 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: url("../images/home/myshape.jpg") no-repeat center center/cover;
+    height: 680px;
+    position: relative;
+    margin-top: 0;
+}
+
+.overlay {
+    background: rgba(12, 46, 97, 0.55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 140px;
+}
+
+.top-text {
+    color: #fff;
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+.hero-subtext {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.stats-row h3 {
+    color: #ffcc00;
+    /* bright yellow */
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+/* ABOUT */
+.about-text {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.quote-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.quote-bg {
+    width: 300px;
+    /* adjust */
+    height: auto;
+    display: block;
+}
+
+.quote-text {
+    position: absolute;
+    top: 50%;
+    /* vertically center over image */
+    left: 50%;
+    /* horizontally center */
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 600;
+    color: #1f4da1;
+    /* your blue color */
+    z-index: 2;
+    /* above the image */
+    width: 80%;
+    /* keep text inside shape */
+    line-height: 1.3;
+}
+
+
+/* REGISTER SECTION */
+.register-section {
+    background: #1f4da1;
+}
+
+.reg-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.reg-card:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: translateY(-5px);
+}
+
+.shape {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 80px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonials-section {
+    background: #fff;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+    color: #444;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background: #d2d2d2;
+}
+
+.testimonial-card {
+    width: 460px;
+    min-height: 220px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    gap: 18px;
+    padding: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.t-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.t-content {
+    flex: 1;
+}
+
+.t-role {
+    font-size: 13px;
+    color: #1f4da1;
+    margin-top: -5px;
+}
+
+.t-desc {
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.quote-icon {
+    width: 22px;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+/* make page full height and layout as column */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* wrapper becomes full viewport height and a column flex container */
+.page-wrapper {
+    min-height: 100vh;
+    /* full screen at minimum */
+    display: flex;
+    flex-direction: column;
+}
+
+/* main content grows to fill available space so footer is pushed down */
+.content {
+    flex: 1 0 auto;
+    /* grow and take remaining space */
+}
+
+/* ensure footer stays at the bottom when page is short */
+.footer-section {
+    flex-shrink: 0;
+    /* don't let footer shrink */
+    background: #3068B1;
+    /* your footer styling (keep existing rules) */
+    /* background: #3068B1 0% 0% no-repeat padding-box; */
+    color: #fff;
+    padding: 40px 0;
+    opacity: 1;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #dfe8ff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffdd76;
+}
+
+/* OPTIONAL: ensure fixed-top navbar doesn't overlap content */
+/* body {
+    padding-top: 80px;
+} */
+/* adjust to navbar height (if using .fixed-top) */
+
+/* small responsive tweak so content isn't hidden under navbar */
+/* @media (max-width: 991px) {
+    body {
+        padding-top: 96px;
+    }
+
+} */
+/* adjust if navbar changes on mobile */
