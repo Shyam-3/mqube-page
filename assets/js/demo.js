@@ -1,4 +1,4 @@
-
+// Get elements
 const submitBtn = document.getElementById("submitBtn");
 const resetBtn = document.getElementById("resetBtn");
 const overlay = document.getElementById("overlay");
@@ -24,7 +24,17 @@ cancelReset.addEventListener("click", () => {
 
 // CONFIRM RESET
 confirmReset.addEventListener("click", () => {
-    document.querySelector("form")?.reset();
+    // document.querySelector("form")?.reset();
+    document.getElementById("fullname").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("contact").value = "";
+    document.getElementById("whatsapp").value = "";
+    document.getElementById("address").value = "";
+    document.getElementById("iam").selectedIndex = 0;
+    document.getElementById("gender").selectedIndex = 0;
+    document.getElementById("board").selectedIndex = 0;
+    document.getElementById("grade").selectedIndex = 0;
+    document.getElementById("vcode").value = "";
     resetPopup.style.display = "none";
     overlay.style.display = "none";
 });
